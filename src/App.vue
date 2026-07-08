@@ -1,7 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <!-- <router-view> berfungsi sebagai "layar" yang akan berganti-ganti halaman sesuai URL -->
+  <router-view></router-view>
 </template>

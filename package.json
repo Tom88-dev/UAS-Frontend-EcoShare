@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.39"
+    "axios": "^1.18.1",
+    "pinia": "^3.0.4",
+    "sweetalert2": "^11.26.25",
+    "vue": "^3.5.39",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.2",
