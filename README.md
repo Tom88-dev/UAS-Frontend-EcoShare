@@ -1,24 +1,15 @@
-# 🌱 Eco-Share (Aplikasi Penyewaan Barang)
+# 🌱 Eco-Share (Frontend)
 
-Eco-Share adalah platform modern berbasis web yang mempertemukan pemilik barang (Owner) dan penyewa (Renter) untuk memaksimalkan penggunaan barang secara efisien dan ramah lingkungan.
+## Penjelasan
+Eco-Share adalah antarmuka platform penyewaan barang berbasis web yang mempertemukan pemilik barang (Owner) dan penyewa (Renter) secara efisien. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dan responsif dalam mengelola katalog maupun transaksi sewa.
 
-## ✨ Fitur Utama
-* **Sistem Multi-Role:** Terbagi menjadi akses *Owner* (Pemilik Barang) dan *Renter* (Penyewa).
-* **Manajemen Barang (Owner):** Form interaktif untuk menambah barang ke dalam katalog sewa.
-* **Manajemen Pesanan (Owner):** Dashboard khusus untuk menyetujui (Approve) atau menolak (Reject) pesanan masuk.
-* **Katalog Global:** Tampilan katalog barang modern dengan fitur *soft-shadow* dan *responsive grid*.
-* **Sewa Saya (Renter):** Halaman khusus bagi penyewa untuk memantau status barang yang sedang mereka sewa.
-* **Desain Responsif:** Tampilan UI/UX yang sudah 100% *Mobile-Friendly*.
+## Stack / Teknis
+* **Bahasa Pemrograman:** JavaScript 
+* **Framework / Library:** Vue.js 3, Vite, Vue Router
+* **Styling:** CSS Native (Modern Card UI)
+* **Integrasi API:** Axios / Fetch API untuk komunikasi dengan Backend
 
-## 🛠️ Teknologi yang Digunakan
-* **Frontend:** Vue.js 3, Vite, Vue Router
-* **Styling:** Custom CSS (Modern Card UI)
-* **Backend Integration:** Axios / Fetch API
-
-## 🚀 Cara Menjalankan Proyek (Frontend)
-
-1. Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/).
-2. Clone *repository* ini.
-3. Buka terminal dan masuk ke folder proyek, lalu jalankan perintah berikut untuk menginstal dependensi:
-   ```bash
-   npm install
+## Flow Aplikasi
+1. Pengguna melakukan login dan sistem akan membedakan akses berdasarkan peran (*Owner* atau *Renter*).
+2. **Jika login sebagai Owner:** Pengguna diarahkan ke Dashboard untuk menyetujui/menolak pesanan masuk, serta dapat menambah barang baru ke dalam Katalog Utama.
+3. **Jika login sebagai Renter:** Pengguna dapat menelusuri Katalog Barang untuk menyewa, dan memantau status persetujuan sewa mereka di halaman "Sewa Saya".
