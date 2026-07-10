@@ -1,1 +1,93 @@
 @import "tailwindcss";
+
+.rentals-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .rental-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .rental-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .status-badge {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white; /* Warna teks putih */
+    display: inline-block;
+  }
+  /* --- DESAIN CARD MODERN --- */
+  .modern-card {
+    background: #ffffff;
+    border: none !important;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Efek bayangan lembut */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efek saat mouse diarahkan ke kartu */
+  .modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed #eee;
+    padding-bottom: 10px;
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+  }
+  
+  .card-body p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .item-name {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 15px 0;
+  }
+  
+  .cost-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cost-section .total-cost {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #27ae60; /* Warna hijau untuk uang */
+  }
+  /* Pastikan warna background ini ada di MyRentalsView.vue */
+  .status-badge.created { background-color: #f39c12; }
+  .status-badge.approved { background-color: #27ae60; }
+  .status-badge.rejected { background-color: #c0392b; }
+  .error-msg {
+    color: red;
+  }
